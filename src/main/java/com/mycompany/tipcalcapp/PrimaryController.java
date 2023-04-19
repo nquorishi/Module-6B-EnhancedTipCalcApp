@@ -31,6 +31,8 @@ public class PrimaryController {
     private TextField totalTextField;
     @FXML
     private Slider tipPercentageSlider;
+    @FXML
+    private TextField people;
 
     @FXML
     private void calculateButtonPressed(ActionEvent event) {

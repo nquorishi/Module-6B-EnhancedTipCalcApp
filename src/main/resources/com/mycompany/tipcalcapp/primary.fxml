@@ -21,6 +21,7 @@
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
    </rowConstraints>
    <children>
       <Label text="Amount">
@@ -35,7 +36,7 @@
          <font>
             <Font name="Arial" size="13.0" />
          </font></Label>
-      <Label text="Total" GridPane.rowIndex="3">
+      <Label text="Total" GridPane.rowIndex="4">
          <font>
             <Font name="Arial" size="13.0" />
          </font></Label>
@@ -47,15 +48,23 @@
          <font>
             <Font name="Arial Black" size="13.0" />
          </font></TextField>
-      <TextField fx:id="totalTextField" editable="false" focusTraversable="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
+      <TextField fx:id="totalTextField" editable="false" focusTraversable="false" GridPane.columnIndex="1" GridPane.rowIndex="4">
          <font>
             <Font name="Arial Black" size="13.0" />
          </font></TextField>
       <Slider fx:id="tipPercentageSlider" blockIncrement="5.0" max="30.0" value="15.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#calculateButtonPressed" text="Calculate" GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#calculateButtonPressed" text="Calculate" GridPane.columnIndex="1" GridPane.rowIndex="5">
          <font>
             <Font name="Arial" size="13.0" />
          </font></Button>
+      <Label prefHeight="17.0" prefWidth="42.0" text="People" GridPane.rowIndex="3">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></Label>
+      <TextField fx:id="people" prefHeight="30.0" prefWidth="171.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font></TextField>
    </children>
    <padding>
       <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
